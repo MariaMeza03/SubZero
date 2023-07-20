@@ -1,7 +1,7 @@
 .footer{
 	width: 100%;
-	background-color:#1f1f1f ;
-	padding: 10px ;
+	background-color:black ;
+	padding: 10px 0;
 	position: absolute;
 
 
@@ -10,17 +10,62 @@
 		
 	}
 
-	h1{
-		letter-spacing: -0.05em;
-		color: $mikado_yellow;
-		line-height: 30px;
+	.container{
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		gap: 30px;
+
+		@media(min-width:1199px){
+			grid-template-columns: repeat(3, 1fr);
+			
+		}
+		
+	}
+
+	&__logo{
+		margin: auto;
+		width: 100%;
+		@media(min-width:1199px){
+			width: 371px;
+		}
+	}
+
+	&__text{
+		@include flex-center-center;
+		flex-direction: column;
+
+		@media(min-width:1199px){
+			@include flex-start-center;
+			grid-column: 2 / 4;
+		}
+		
+		h1{
+		color: white;
+		line-height:15px;
+		font-size: 12px;
+		font-weight: bold;
 		text-align: center;
-		font-size: 15px;
-		font-weight: normal;
 
 		@media(min-width:1199px){
 			font-size: 15px;
+			text-align: start;
+		}
+		}
+
+		p{
+			padding-top: 15px;
+			color: white;
+			line-height: 20px;
+			font-size: 12px;
+			font-weight: bold;
+			text-align: center;
+
+			@media(min-width:1199px){
+				font-size: 15px;
+				text-align: start;
+			}
 		}
 	}
+
 
 }

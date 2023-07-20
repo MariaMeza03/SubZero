@@ -1,0 +1,99 @@
+.services{
+    width: 100%;
+	overflow: hidden;
+	position: relative;
+    padding:  0;
+
+    @media(min-width:1199px){
+        padding: 60px 0;
+
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+
+            @media(min-width: 1199px){
+                grid-template-columns: repeat(2, 1fr);
+                gap: 40px;
+            }
+    }
+
+    &__imagen{
+
+    }
+
+    &__text{
+        @include flex-start-center;
+        flex-direction: column;
+        &__title{
+            h1{
+                font-family: Segoe UI bold;
+                font-size: 25px;
+                color: $Medium_electric_blue;
+    
+                @media(min-width: 1199px){
+                    font-size: 30px;
+                }
+            }
+
+            p{
+                padding-top: 15px;
+                color: $black;
+                font-family: Segoe UI Regular;
+                font-size: 15px;
+                text-align: center;
+
+                @media(min-width: 1199px){
+                    font-size: 18px;
+                    padding-top: 20px;
+                }
+            }
+        }
+
+        &__item{
+            padding-top: 30px;
+             display: flex;
+             gap: 20px;
+
+            &__logo{
+                width: 50px;
+
+                img{
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+
+            &__text{
+                h1{
+                    color: $black;
+                    font-family: Segoe UI bold;
+                    font-size: 15px;
+                    font-weight: bold;     
+                    padding-bottom: 10px;
+
+                    @media(min-width: 1199px){
+                        font-size: 18px;
+                        padding-bottom: 15px;
+                    }
+                }
+
+                p{
+                    color: $black;
+                    font-family: Segoe UI Regular;
+                    font-size: 15px;
+
+                    @media(min-width: 1199px){
+                        font-size: 18px;
+                    }
+                }
+    
+            }
+
+
+        }
+
+    }
+}
