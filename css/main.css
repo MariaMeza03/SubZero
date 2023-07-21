@@ -112,7 +112,7 @@
   overflow: hidden;
   position: relative;
   height: auto;
-  background-image: url("../../img/Banner.webp");
+  background-image: url("../img/Banner.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -485,7 +485,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-image: url("../../img/banner-llama.webp");
+    background-image: url("../img/banner-llama.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -542,7 +542,7 @@
   overflow: hidden;
   position: relative;
   padding: 30px 0;
-  background-image: url("../../img/banner-sub.webp");
+  background-image: url("../img/banner-sub.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -775,7 +775,7 @@
 .form {
   width: 100%;
   overflow: hidden;
-  background-image: url("../../img/fondo-contacto.webp");
+  background-image: url("../img/fondo-contacto.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

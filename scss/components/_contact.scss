@@ -11,7 +11,7 @@
     .container{
         @include flex-center-center;
         flex-direction: column;
-        background-image:url('../../img/banner-llama.webp');	
+        background-image:url('../img/banner-llama.webp');	
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat; 
