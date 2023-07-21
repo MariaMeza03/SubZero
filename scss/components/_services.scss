@@ -21,6 +21,14 @@
     }
 
     &__imagen{
+        margin: auto;
+        width: 100%;
+        @media(min-width: 578px){
+            width: 70%;
+        }
+        @media(min-width: 1199px){
+            width: 100%;
+        }
 
     }
 

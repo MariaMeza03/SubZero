@@ -68,6 +68,9 @@
   .footer__logo {
     margin: auto;
     width: 100%; }
+    @media (min-width: 350px) {
+      .footer__logo {
+        width: 250px; } }
     @media (min-width: 1199px) {
       .footer__logo {
         width: 371px; } }
@@ -224,7 +227,7 @@
   width: 100%;
   overflow: hidden;
   position: relative;
-  padding: 0; }
+  padding: 30px 0; }
   @media (min-width: 1199px) {
     .center {
       padding: 60px 0; } }
@@ -285,7 +288,7 @@
       flex-direction: column;
       width: 100%; }
   .center__carrousel {
-    padding-top: 30px;
+    padding-top: 10px;
     display: flex; }
     @media (min-width: 992px) {
       .center__carrousel {
@@ -329,14 +332,17 @@
     .reparation {
       padding: 60px 0; } }
   .reparation__grid {
-    margin: 30px 0;
+    margin: 15px 0;
     padding: 30px 0;
     background-color: #00489A; }
+    @media (min-width: 1199px) {
+      .reparation__grid {
+        margin: 30px 0; } }
     .reparation__grid .container {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 20px; }
-      @media (min-width: 1199px) {
+      @media (min-width: 576px) {
         .reparation__grid .container {
           grid-template-columns: repeat(4, 1fr);
           gap: 30px; } }
@@ -347,7 +353,7 @@
       flex-direction: column;
       width: 100%; }
       .reparation__grid__item__img {
-        width: 70%; }
+        width: 50%; }
         @media (min-width: 1199px) {
           .reparation__grid__item__img {
             width: 120px; } }
@@ -409,6 +415,15 @@
       .services .container {
         grid-template-columns: repeat(2, 1fr);
         gap: 40px; } }
+  .services__imagen {
+    margin: auto;
+    width: 100%; }
+    @media (min-width: 578px) {
+      .services__imagen {
+        width: 70%; } }
+    @media (min-width: 1199px) {
+      .services__imagen {
+        width: 100%; } }
   .services__text {
     display: flex;
     align-items: flex-start;
@@ -461,7 +476,7 @@
   width: 100%;
   overflow: hidden;
   position: relative;
-  padding: 0; }
+  padding: 30px 0; }
   @media (min-width: 1199px) {
     .contact {
       padding: 60px 0; } }
@@ -474,13 +489,16 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 60px 15px; }
+    padding: 40px 15px;
+    width: 95%;
+    border-radius: 25px; }
+    @media (min-width: 350px) {
+      .contact .container {
+        padding: 60px 15px; } }
     @media (min-width: 1199px) {
       .contact .container {
+        width: 100%;
         padding: 90px 0; } }
-    @media (min-width: 601px) {
-      .contact .container {
-        border-radius: 25px; } }
   .contact__title h1 {
     font-family: Segoe UI bold;
     text-align: center;
@@ -597,7 +615,7 @@
   width: 100%;
   overflow: hidden;
   position: relative;
-  padding: 0; }
+  padding: 0 0 30px 0; }
   @media (min-width: 1199px) {
     .reviews {
       padding: 60px 0; } }
@@ -762,10 +780,12 @@
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  padding: 15px 0; }
+  padding: 15px 0;
+  margin: 30px  0; }
   @media (min-width: 1199px) {
     .form {
-      padding: 0; } }
+      padding: 0;
+      margin: 60px 0 0px 0; } }
   .form--image {
     width: 50%;
     position: absolute;
@@ -879,7 +899,10 @@
   width: 100%;
   overflow: hidden;
   position: relative;
-  padding: 30px 0 60px 0; }
+  padding: 0 0 30px 0; }
+  @media (min-width: 1199px) {
+    .button {
+      padding: 60px 0 90px 0; } }
   .button .container {
     display: flex;
     align-items: center;
