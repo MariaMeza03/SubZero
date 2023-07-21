@@ -199,6 +199,9 @@
         @media (min-width: 1700px) {
           .hero__text__button button {
             font-size: 30px; } }
+      .hero__text__button button:hover {
+        background-color: #035096;
+        color: #FFFFFF; }
     .hero__text button {
       margin-top: 30px;
       background-color: #E6B743;
@@ -378,6 +381,9 @@
         @media (min-width: 1700px) {
           .reparation__grid__button button {
             font-size: 30px; } }
+      .reparation__grid__button button:hover {
+        background-color: #035096;
+        color: #FFFFFF; }
   .reparation__title h1 {
     font-family: Segoe UI bold;
     text-align: center;
@@ -391,7 +397,7 @@
   width: 100%;
   overflow: hidden;
   position: relative;
-  padding: 0; }
+  padding: 30px 0; }
   @media (min-width: 1199px) {
     .services {
       padding: 60px 0; } }
@@ -450,6 +456,464 @@
         @media (min-width: 1199px) {
           .services__text__item__text p {
             font-size: 18px; } }
+
+.contact {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 0; }
+  @media (min-width: 1199px) {
+    .contact {
+      padding: 60px 0; } }
+  .contact .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url("../../img/banner-llama.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px 15px; }
+    @media (min-width: 1199px) {
+      .contact .container {
+        padding: 90px 0; } }
+    @media (min-width: 601px) {
+      .contact .container {
+        border-radius: 25px; } }
+  .contact__title h1 {
+    font-family: Segoe UI bold;
+    text-align: center;
+    font-size: 25px;
+    color: #FFFFFF; }
+    @media (min-width: 1199px) {
+      .contact__title h1 {
+        font-size: 30px; } }
+  .contact__button {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    @media (min-width: 1199px) {
+      .contact__button {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start; } }
+    .contact__button button {
+      margin-top: 30px;
+      background-color: #E6B743;
+      font-family: Segoe UI bold;
+      padding: 15px;
+      color: black;
+      font-size: 15px;
+      border-radius: 10px; }
+      @media (min-width: 768px) {
+        .contact__button button {
+          font-size: 25px; } }
+      @media (min-width: 1199px) {
+        .contact__button button {
+          padding: 23px 35px; } }
+      @media (min-width: 1700px) {
+        .contact__button button {
+          font-size: 30px; } }
+    .contact__button button:hover {
+      background-color: #035096;
+      color: #FFFFFF; }
+
+.servicesTecnic {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 30px 0;
+  background-image: url("../../img/banner-sub.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 20px 0; }
+  @media (min-width: 1199px) {
+    .servicesTecnic {
+      padding: 90px 0; } }
+  .servicesTecnic .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 30px; }
+    @media (min-width: 1199px) {
+      .servicesTecnic .container {
+        padding: 70px 0; } }
+  .servicesTecnic__title h1 {
+    font-family: Segoe UI bold;
+    text-align: center;
+    font-size: 25px;
+    color: #FFFFFF; }
+    @media (min-width: 1199px) {
+      .servicesTecnic__title h1 {
+        font-size: 30px; } }
+  .servicesTecnic__title p {
+    width: 100%;
+    margin: auto;
+    padding-top: 15px;
+    font-family: Segoe UI Regular;
+    font-size: 15px;
+    text-align: center;
+    color: #FFFFFF; }
+    @media (min-width: 1199px) {
+      .servicesTecnic__title p {
+        width: 60%;
+        font-size: 18px;
+        padding-top: 20px; } }
+  .servicesTecnic__button {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    @media (min-width: 1199px) {
+      .servicesTecnic__button {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start; } }
+    .servicesTecnic__button button {
+      margin-top: 30px;
+      background-color: #E6B743;
+      font-family: Segoe UI bold;
+      padding: 15px;
+      color: black;
+      font-size: 15px;
+      border-radius: 10px; }
+      @media (min-width: 768px) {
+        .servicesTecnic__button button {
+          font-size: 25px; } }
+      @media (min-width: 1199px) {
+        .servicesTecnic__button button {
+          padding: 23px 35px; } }
+      @media (min-width: 1700px) {
+        .servicesTecnic__button button {
+          font-size: 30px; } }
+    .servicesTecnic__button button:hover {
+      background-color: #035096;
+      color: #FFFFFF; }
+
+.reviews {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 0; }
+  @media (min-width: 1199px) {
+    .reviews {
+      padding: 60px 0; } }
+  .reviews .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+  .reviews--prev {
+    position: absolute;
+    left: 15px;
+    top: 60%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    z-index: 2; }
+    .reviews--prev svg {
+      width: 30px;
+      fill: black; }
+  .reviews--next {
+    position: absolute;
+    right: 15px;
+    top: 60%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    z-index: 2; }
+    .reviews--next svg {
+      width: 30px;
+      fill: black; }
+  .reviews__title h1 {
+    font-family: Segoe UI bold;
+    text-align: center;
+    font-size: 25px;
+    color: #035096; }
+    @media (min-width: 1199px) {
+      .reviews__title h1 {
+        font-size: 30px; } }
+  .reviews__grid {
+    padding-top: 60px;
+    gap: 10px;
+    display: none; }
+    @media (min-width: 992px) {
+      .reviews__grid {
+        display: flex; } }
+    @media (min-width: 1199px) {
+      .reviews__grid {
+        gap: 50px; } }
+    .reviews__grid__item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 100%; }
+      .reviews__grid__item__imagen {
+        width: 200px; }
+      .reviews__grid__item__start {
+        width: 280px;
+        margin: 20px auto; }
+        @media (min-width: 1199px) {
+          .reviews__grid__item__start {
+            width: 240px; } }
+      .reviews__grid__item__box {
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+        background-color: #E6B743;
+        padding: 25px;
+        border-bottom-left-radius: 25px 25px;
+        border-bottom-right-radius: 25px 25px; }
+        .reviews__grid__item__box p {
+          margin: auto;
+          font-family: Segoe UI Regular;
+          font-size: 15px;
+          text-align: center;
+          color: #000000; }
+          @media (min-width: 1199px) {
+            .reviews__grid__item__box p {
+              font-size: 18px; } }
+        .reviews__grid__item__box span {
+          font-weight: bold; }
+  .reviews__carrousel {
+    padding-top: 30px;
+    display: flex;
+    width: 100%; }
+    @media (min-width: 992px) {
+      .reviews__carrousel {
+        display: none; } }
+    .reviews__carrousel__item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column; }
+      .reviews__carrousel__item__imagen {
+        width: 200px; }
+      .reviews__carrousel__item__start {
+        width: 180px;
+        margin: 20px auto; }
+        @media (min-width: 768px) {
+          .reviews__carrousel__item__start {
+            width: 200px; } }
+        @media (min-width: 1199px) {
+          .reviews__carrousel__item__start {
+            width: 240px; } }
+        .reviews__carrousel__item__start img {
+          width: 100%; }
+      .reviews__carrousel__item__box {
+        height: 140px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px;
+        background-color: #E6B743;
+        border-bottom-left-radius: 25px 25px;
+        border-bottom-right-radius: 25px 25px; }
+        @media (min-width: 1199px) {
+          .reviews__carrousel__item__box {
+            height: 150px; } }
+        .reviews__carrousel__item__box p {
+          margin: auto;
+          font-family: Segoe UI Regular;
+          font-size: 15px;
+          text-align: center;
+          color: #000000; }
+          @media (min-width: 1199px) {
+            .reviews__carrousel__item__box p {
+              font-size: 18px; } }
+        .reviews__carrousel__item__box span {
+          font-weight: bold; }
+
+.swiper_reviews {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+  .swiper_reviews .swiper-slide {
+    width: 100% !important;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    padding: 10px; }
+
+.form {
+  width: 100%;
+  overflow: hidden;
+  background-image: url("../../img/fondo-contacto.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 15px 0; }
+  @media (min-width: 1199px) {
+    .form {
+      padding: 0; } }
+  .form--image {
+    width: 50%;
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+    background: linear-gradient(to right, rgba(0, 71, 153, 0.7), rgba(230, 183, 67, 0.7));
+    padding: 30px 0;
+    display: none; }
+    @media (min-width: 1199px) {
+      .form--image {
+        display: block; } }
+    .form--image h1 {
+      font-family: Segoe UI bold;
+      text-align: center;
+      font-size: 25px;
+      color: #FFFFFF; }
+      @media (min-width: 1199px) {
+        .form--image h1 {
+          font-size: 30px; } }
+    .form--image p {
+      margin: auto;
+      font-family: Segoe UI Regular;
+      font-size: 15px;
+      text-align: center;
+      color: #FFFFFF;
+      padding: 7px; }
+      @media (min-width: 1199px) {
+        .form--image p {
+          font-size: 18px; } }
+    .form--image span {
+      font-weight: bold; }
+  .form .container {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    @media (min-width: 1199px) {
+      .form .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); } }
+  .form__form {
+    background-color: #FFFFFF;
+    padding: 20px; }
+    @media (min-width: 576px) {
+      .form__form {
+        padding: 25px; } }
+    @media (min-width: 768px) {
+      .form__form {
+        padding: 60px; } }
+    .form__form h1 {
+      font-family: Segoe UI Regular;
+      font-size: 25px;
+      color: #035096;
+      padding-bottom: 15px; }
+      @media (min-width: 1199px) {
+        .form__form h1 {
+          font-size: 30px; } }
+    .form__form p {
+      margin: auto;
+      font-family: Segoe UI Regular;
+      font-size: 15px;
+      color: #000000;
+      padding-bottom: 10px; }
+      @media (min-width: 1199px) {
+        .form__form p {
+          font-size: 18px; } }
+    .form__form span {
+      font-weight: bold; }
+    .form__form__inputs {
+      padding-top: 30px; }
+      .form__form__inputs__input {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column; }
+        .form__form__inputs__input label {
+          font-family: Segoe UI Regular;
+          font-size: 15px;
+          color: #000000;
+          padding-bottom: 10px;
+          font-weight: bold; }
+          @media (min-width: 1199px) {
+            .form__form__inputs__input label {
+              font-size: 18px; } }
+        .form__form__inputs__input input {
+          width: 100%;
+          border: none;
+          background: transparent;
+          padding: 20px;
+          margin-bottom: 5px; }
+      .form__form__inputs__button {
+        padding-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .form__form__inputs__button button {
+          width: 100%;
+          background-color: #035096;
+          font-family: Segoe UI bold;
+          padding: 15px;
+          color: #FFFFFF;
+          font-size: 15px;
+          border-radius: 10px; }
+          @media (min-width: 1199px) {
+            .form__form__inputs__button button {
+              font-size: 18px; } }
+        .form__form__inputs__button button:hover {
+          background-color: #E6B743;
+          color: #000000; }
+
+.button {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 30px 0 60px 0; }
+  .button .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+  .button__form {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    @media (min-width: 1199px) {
+      .button__form {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start; } }
+    .button__form a {
+      text-align: center;
+      background-color: #E6B743;
+      font-family: Segoe UI bold;
+      padding: 15px;
+      color: black;
+      font-size: 15px;
+      border-radius: 10px; }
+      @media (min-width: 768px) {
+        .button__form a {
+          font-size: 25px; } }
+      @media (min-width: 1199px) {
+        .button__form a {
+          padding: 23px 35px; } }
+      @media (min-width: 1700px) {
+        .button__form a {
+          font-size: 30px; } }
+    .button__form a:hover {
+      background-color: #035096;
+      color: #FFFFFF; }
 
 @font-face {
   font-family: Segoe UI bold;

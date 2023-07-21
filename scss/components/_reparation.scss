@@ -77,6 +77,11 @@
                     font-size: 30px;
                 }
             }
+
+            button:hover{
+                background-color:$Medium_electric_blue ;
+                color: $white;
+            }
         }
     }
 
