@@ -417,7 +417,6 @@
           font-size: 30px; } }
     .services__text__title p {
       padding-top: 15px;
-      color: #000000;
       font-family: Segoe UI Regular;
       font-size: 15px;
       text-align: center; }
@@ -479,3 +478,6 @@ a {
 svg {
   width: 100%;
   height: 100%; }
+
+body {
+  font-size: 45px; }

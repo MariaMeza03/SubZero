@@ -24,7 +24,7 @@
 
     }
 
-    &__text{
+    &__text{ 
         @include flex-start-center;
         flex-direction: column;
         &__title{
@@ -40,7 +40,6 @@
 
             p{
                 padding-top: 15px;
-                color: $black;
                 font-family: Segoe UI Regular;
                 font-size: 15px;
                 text-align: center;
