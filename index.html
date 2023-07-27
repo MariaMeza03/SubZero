@@ -365,29 +365,29 @@
 					<strong><a href="https://api.whatsapp.com/send/?phone=5215632996141&text=Me+gustar%C3%ADa+saber+m%C3%A1s+informaci%C3%B3n&type=phone_number&app_absent=0" target="_blank"><p style="font-size: 20px; color: #035096;">Whats: 56 3299 6141</p></a></strong>
 					<strong><a href="mailto:info@servicioastec.com"> <p style="font-size: 20px; color: #035096;">Email: info@servicioastec.com</p></strong>
 
-					<div class="form__form__inputs">
+					<form class="form__form__inputs" id="formContact" class="contact__form">
 						<div class="form__form__inputs__input">
-							<input type="text" id="name" placeholder="Nombre"></input>
+							<input type="text" id="nombre" name="nombre" placeholder="Nombre"></input>
 						</div>
 
 						<div class="form__form__inputs__input">
-							<input type="text" id="email" placeholder="Mail"></input>
+							<input type="text" id="email" name="email" placeholder="Mail"></input>
 						</div>
 
 						<div class="form__form__inputs__input">
-							<input type="text" id="phone" placeholder="Teléfono"></input>
+							<input type="text" id="telefono" name="telefono" placeholder="Teléfono"></input>
 						</div>
 
 						<div class="form__form__inputs__input">
-							<textarea type="text" id="messange" placeholder="Mensaje" ></textarea>
+							<textarea type="text" name="mensaje"  id="mensaje" placeholder="Mensaje" ></textarea>
 						</div>
 
 						<div class="form__form__inputs__button">
-							<button type="submit" >COTIZAR</button>
+							<button type="submit" name="enviar" value="Send">COTIZAR</button>
 
 						</div>
 
-					</div>
+					</form>
 
 					
 
@@ -434,7 +434,7 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 <script src="./js/powerRent.js"></script>
 <script src="./js/powerReviews.js"></script>
-
+<script src="./js/correo.js"></script>
 
 
 </html>
