@@ -79,6 +79,9 @@
             @include flex-center-center;
             flex-direction: column;
             width: 100%;
+            box-shadow: 1px 3px 14px 0px #b7b3b3;
+            border-radius: 25px;
+            padding: 40px;
 
             &__imagen{
                 width: 200px;
@@ -136,6 +139,7 @@
         &__item{
             @include flex-center-center;
             flex-direction: column;
+            width: 100%;
 
             &__imagen{
                 width: 200px;
