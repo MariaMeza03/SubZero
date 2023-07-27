@@ -691,7 +691,7 @@
       width: 100%;
       box-shadow: 1px 3px 14px 0px #b7b3b3;
       border-radius: 25px;
-      padding: 40px; }
+      padding: 30px; }
       .reviews__grid__item__imagen {
         width: 200px; }
       .reviews__grid__item__start {
@@ -734,7 +734,10 @@
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      width: 100%; }
+      width: 90%;
+      box-shadow: 1px 3px 14px 0px #b7b3b3;
+      border-radius: 25px;
+      padding: 20px; }
       .reviews__carrousel__item__imagen {
         width: 200px; }
       .reviews__carrousel__item__start {
