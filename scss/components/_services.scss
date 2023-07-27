@@ -38,10 +38,14 @@
         &__title{
             h1{
                 font-family: Segoe UI bold;
-                font-size: 25px;
+                font-size: 20px;
                 color: $Medium_electric_blue;
     
-                @media(min-width: 1199px){
+                @media(min-width:768px){
+                    font-size: 25px;
+                }
+        
+                @media(min-width:1700px){
                     font-size: 30px;
                 }
             }
