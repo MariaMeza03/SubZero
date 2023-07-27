@@ -104,6 +104,32 @@
           font-size: 15px;
           text-align: start; } }
 
+.layout_whatsapp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 35px;
+  right: 25px;
+  z-index: 100;
+  gap: 10px; }
+  @media (min-width: 1199px) {
+    .layout_whatsapp {
+      bottom: 80px; } }
+  .layout_whatsapp__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 82px !important;
+    height: auto;
+    padding: 15px;
+    background-color: #15B633;
+    border-radius: 100%; }
+    .layout_whatsapp__button__img {
+      width: 30px; }
+      .layout_whatsapp__button__img img {
+        width: 100%; }
+
 .hero {
   width: 100%;
   overflow: hidden;
