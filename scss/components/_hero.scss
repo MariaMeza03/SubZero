@@ -1,144 +1,155 @@
 .hero{
     width: 100%;
-	overflow: hidden;
 	position: relative;
 	height: auto;
-    background-image:url('../img/Banner.webp');	
-    background-size: cover;
-    background-position: center;
+    background-image:url('../img/background_one.webp');	
+    background-size:cover;
+    background-position:center;
     background-repeat: no-repeat; 
-    padding: 60px 0;
+    /*margin-top: 80px;*/
+   @include flex-center-center;
 
     @media(min-width:1199px){
-        height: 900px;
+        background-image:url('../img/background.webp');	
+        background-size:cover;
+        background-position:center;
+        background-repeat: no-repeat; 
+        height: auto;
+        padding: 350px 0;
     }
 
 
     .container{
         @include flex-center-center;
-        flex-direction: column;
+        flex-direction: column-reverse;
 
         @media(min-width:1199px){
-            @include flex-start-center;
-		}
-    }
-
-    &__logo{
-		width: 100%;
-		@media(min-width:1199px){
-			width: 371px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
 		}
     }
 
     &__text{
-        padding-top: 40px;
         width: 100%;
+        @include flex-center-center;
+        flex-direction: column;
 
-        @media(min-width:1199px){
-			width: 50%;
-            padding-top: 90px;
-		}
-
+        @media(min-width:1199px){ //*table
+            @include flex-start-center;
+        }
+        
         h1{
-            color: white;
-            font-size: 35px;
-            font-weight: bold;
+            color: $black;
+            font-size: 25px;
+            font-weight:bold;
             text-align: center;
-            font-family: Segoe UI bold;
-            line-height: 40px;
+            font-family: Lato-Bold;
+            line-height: 32px;
 
             @media(min-width:768px){ //*phone
-                font-size: 55px;
-                line-height:60px;
+                font-size: 45px;
+                line-height:50px;
             }
 
             @media(min-width:1199px){ //*table
                 text-align: start;
+                font-size: 60px;
             }
 
             @media(min-width:1700px){//*Desktop
-                line-height: 75px;
-                font-size: 70px;
-                text-align: start;
+                line-height: 72px;
+                font-size: 66px;
             }
+        }
+
+        span{
+            font-size: 25px;
+            font-weight:bold;
+            text-align: center;
+            font-family: Lato-Bold;
+            line-height: 32px;
+
+            @media(min-width:768px){ //*phone
+                font-size: 45px;
+                line-height:50px;
+            }
+
+            @media(min-width:1199px){ //*table
+                text-align: start;
+                font-size: 60px;
+            }
+
+            @media(min-width:1700px){//*Desktop
+                line-height: 72px;
+                font-size: 66px;
+            }
+            
+            color: $water_blue;
         }
 
         p{
             padding-top: 25px;
-            color: white;
+            color: $black;
             font-size: 20px;
             text-align: center;
-            font-family: Segoe UI Regular;
-
+            line-height: 25px;
+            
             @media(min-width:768px){
                 font-size: 25px;
+                line-height: 32px;
             }
-
-            @media(min-width:1199px){
+            @media(min-width:1199px){ //*table
                 text-align: start;
             }
-
-            @media(min-width:1700px){
-                font-size: 30px;
-            }
         }
+
         &__button{
             @include flex-center-center;
 
             @media(min-width:1199px){
-                @include flex-start-start;
+                @include flex-center-start;
             }
 
-            button{
+            a{
+                border: 2px solid $elephant;
                 margin-top: 30px;
-                background-color:$Tulip_tree ;
-                font-family: Segoe UI bold;
-                padding: 15px ;
-                color:black;
+                background-color:$elephant ;
+                font-family: OpenSans-Bold;
+                padding: 15px 30px ;
+                color:white;
                 font-size: 15px;
-                border-radius: 10px;
+                border-radius: 28px;
+                text-align: center;
+
+                @media(min-width:300px){
+                    font-size: 20px;         
+                }
     
                 @media(min-width:768px){
                     font-size: 25px;
                     
                 }
-    
-                @media(min-width:1199px){
-                    padding: 23px 35px;
-                }
-                
-                @media(min-width:1700px){
-                    font-size: 30px;
-                }
             }
 
-            button:hover{
-                background-color:$Medium_electric_blue ;
-                color: $white;
+            a:hover{
+                background-color:$white ;
+                color: $science_blue;
+                border: 2px solid $science_blue;
             }
         }
+    }
 
-        button{
-            margin-top: 30px;
-            background-color:$Tulip_tree ;
-            font-family: Segoe UI bold;
-            padding: 15px ;
-            color:black;
-            font-size: 15px;
-            border-radius: 10px;
 
-            @media(min-width:768px){
-                font-size: 25px;
-                
-            }
+    &__imagen{
+        position: relative;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        @include flex-center-start;
 
-            @media(min-width:1199px){
-                padding: 23px 35px;
-            }
-            
-            @media(min-width:1700px){
-                font-size: 30px;
-            }
+        @media(min-width:1199px){
+            display: none ;
         }
     }
 
