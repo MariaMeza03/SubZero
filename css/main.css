@@ -1268,7 +1268,10 @@
   width: 100%;
   height: auto;
   padding: 30px 0;
-  background: #5D70D6; }
+  background-image: url("../../img/fondo-contact.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
   @media (min-width: 1199px) {
     .form {
       padding: 60px 0; } }
