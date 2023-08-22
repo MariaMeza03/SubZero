@@ -13,7 +13,7 @@
 
     .container{
         @include flex-center-center;
-        flex-direction: column;
+        flex-direction: column-reverse;
         gap: 15px;
 
         @media(min-width:1199px){
@@ -36,7 +36,7 @@
         h1{
             color: $white;
             font-size: 20px;
-            font-family: Lato-Bold;
+            font-family: Poppins-Bold;
             text-align: center;
             
             @media(min-width:768px){
@@ -81,7 +81,7 @@
         h1{
             color: $white;
             font-size: 20px;
-            font-family: Lato-Bold;
+            font-family: Poppins-Bold;
             text-align: center;
             
             @media(min-width:768px){
@@ -106,9 +106,7 @@
             }
             
             &__input{
-                @media(min-width:1199px){
-                    padding:7.5px 0;
-                }
+                padding:7.5px 0;
     
                 input{
                     width: 100%;
