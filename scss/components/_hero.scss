@@ -128,6 +128,7 @@
     }
     
     &__carrousel{
+        padding-top: 15px;
         width: 100%;
         position: relative;
         height: auto;
@@ -143,7 +144,8 @@
         .container{
             @include flex-center-center;
             flex-direction: column;
-    
+            gap: 15px;
+
             @media(min-width:1199px){
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
