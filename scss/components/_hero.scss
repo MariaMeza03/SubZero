@@ -2,20 +2,12 @@
     width: 100%;
 	position: relative;
 	height: auto;
-    background-image:url('../img/background_one.webp');	
-    background-size:cover;
-    background-position:center;
-    background-repeat: no-repeat; 
     /*margin-top: 80px;*/
    @include flex-center-center;
 
     @media(min-width:1199px){
-        background-image:url('../img/background.webp');	
-        background-size:cover;
-        background-position:center;
-        background-repeat: no-repeat; 
         height: auto;
-        padding: 350px 0;
+        padding:124px 0;
     }
 
 
@@ -26,6 +18,7 @@
         @media(min-width:1199px){
             display: grid;
             grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
 		}
     }
 
@@ -43,7 +36,7 @@
             font-size: 25px;
             font-weight:bold;
             text-align: center;
-            font-family: Lato-Bold;
+            font-family: Poppins-Bold;
             line-height: 32px;
 
             @media(min-width:768px){ //*phone
@@ -62,30 +55,6 @@
             }
         }
 
-        span{
-            font-size: 25px;
-            font-weight:bold;
-            text-align: center;
-            font-family: Lato-Bold;
-            line-height: 32px;
-
-            @media(min-width:768px){ //*phone
-                font-size: 45px;
-                line-height:50px;
-            }
-
-            @media(min-width:1199px){ //*table
-                text-align: start;
-                font-size: 60px;
-            }
-
-            @media(min-width:1700px){//*Desktop
-                line-height: 72px;
-                font-size: 66px;
-            }
-            
-            color: $water_blue;
-        }
 
         p{
             padding-top: 25px;
@@ -102,7 +71,6 @@
                 text-align: start;
             }
         }
-
         &__button{
             @include flex-center-center;
 
@@ -111,14 +79,14 @@
             }
 
             a{
-                border: 2px solid $elephant;
+                border: 2px solid $gold_drop;
                 margin-top: 30px;
-                background-color:$elephant ;
-                font-family: OpenSans-Bold;
+                background-color:$gold_drop ;
+                font-family: Poppins-Bold;
                 padding: 15px 30px ;
-                color:white;
+                color:$black;
                 font-size: 15px;
-                border-radius: 28px;
+                border-radius: 10px;
                 text-align: center;
 
                 @media(min-width:300px){
@@ -139,7 +107,6 @@
         }
     }
 
-
     &__imagen{
         position: relative;
         top: 0;
@@ -148,9 +115,6 @@
         width: 100%;
         @include flex-center-start;
 
-        @media(min-width:1199px){
-            display: none ;
-        }
     }
 
 

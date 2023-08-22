@@ -25,33 +25,20 @@
 @import 'components/thanks';
 
 @font-face {
-	font-family:  OpenSans-Regular;
-	src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
+	font-family:  Poppins-Regular;
+	src: url('../fonts/Poppins-Regular.ttf') format('truetype');
 
   }
 
   @font-face {
-	font-family:  OpenSans-Bold;
-	src: url('../fonts/OpenSans-Bold.ttf') format('truetype');
+	font-family:  Poppins-Bold;
+	src: url('../fonts/Poppins-Bold.ttf') format('truetype');
 
   }
-
-  @font-face {
-	font-family: Lato-Bold;
-	src: url('../fonts/Lato-Bold.ttf') format('truetype');
-
-  }
-
-  @font-face {
-	font-family: Lato-Regular;
-	src: url('../fonts/Lato-Regular.ttf') format('truetype');
-
-  }
-
 
   
 *{
-	font-family: OpenSans-Regular;
+	font-family: Poppins-Regular;
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
