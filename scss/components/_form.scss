@@ -18,7 +18,7 @@
 
         @media(min-width:1199px){
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(2, 1fr);
             gap: 30px;
 		}
     }
@@ -63,61 +63,13 @@
                 font-size: 18px;  
             }
         }
-
-        &__grid{
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            gap: 15px;
-
-            @media(min-width:768px){
-                grid-template-columns: repeat(3, 1fr);
-            }
-
-            @media(min-width:1199px){
-                grid-template-columns: repeat(1, 1fr);
-            }
-
-            &__item{
-                width: 100%;
-                background-color: $elephant;
-                padding: 5px 20px;
-                @include flex-center-start;
-                gap: 10px;
-                border-radius: 17px;
-    
-            
-                &__icon{
-                    width: 20px;
-    
-                    @media(min-width:1700px){
-                        width: 30px;
-                    }
-    
-                    svg{
-                        width: 100%;
-                    }
-                }
-    
-                a.phone{
-                    font-family: Lato-Regular;
-                    font-size: 15px;
-                    color: $white;
-                    font-weight: 400;
-                    padding: 10px 0px ;
-                    transition: 0.3s;
-
-                    @media(min-width:1199px){
-                        font-size: 18px;
-                    }
-        
-                }  
-            }
+        span{
+            font-family:Poppins-Bold;
         }
    
     }
 
     &__question{
-        grid-column: 2/4;
         width: 100%;
         margin: auto;
         border-radius: 10px;
@@ -126,34 +78,36 @@
             padding: 0;
         }
 
-        &__grid{
-            padding-bottom: 15px;
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            gap: 15px;
-
+        h1{
+            color: $white;
+            font-size: 20px;
+            font-family: Lato-Bold;
+            text-align: center;
+            
+            @media(min-width:768px){
+                font-size: 25px;
+            }
+    
             @media(min-width:1199px){
-                grid-template-columns: repeat(2, 1fr);
-                padding-bottom: 0px;
+                font-size: 30px;
+                text-align: start;
+            }
+            
+            @media(min-width:1700px){
+                font-size: 35px;
             }
         }
 
-
         &__inputs{
+            padding-top: 15px;
+
+            @media(min-width:1199px){
+                padding-top: 30px;
+            }
             
             &__input{
                 @media(min-width:1199px){
                     padding:7.5px 0;
-                }
-
-                label{
-                    color: $black;
-                    font-family: GE Sans bold;
-                    font-size: 15px;
-        
-                    @media(min-width: 1199px){
-                        font-size: 18px;
-                    }
                 }
     
                 input{
@@ -161,7 +115,7 @@
                     padding: 15px;
                     background-color: $harp;
                     border: none;
-                    border-radius: 32px;
+                    border-radius: 10px;
                 }
                 
                 textarea{
@@ -169,7 +123,7 @@
                     padding: 15px;
                     background-color: $harp;
                     border: none;
-                    border-radius: 32px;
+                    border-radius: 10px;
                 }
 
                 &__button{
@@ -178,15 +132,15 @@
 
                     button{
                         width: 100%;
-                        border: 2px solid $elephant;
+                        border: 2px solid $gold_drop;
                         margin-top: 10px;
-                        background-color:$elephant ;
-                        font-family: OpenSans-Bold;
+                        background-color:$gold_drop ;
+                        font-family: Poppins-Bold;
                         padding: 15px ;
-                        color: $white;
+                        color: $black;
                         font-size: 15px;
                         text-align: center;
-                        border-radius: 32px;
+                        border-radius: 10px;
 
                         @media(min-width: 1199px){
                             font-size: 18px;
