@@ -149,7 +149,7 @@
         align-items: center;
         justify-content: center;
         gap: 10px;
-        border-radius: 17px; }
+        border-radius: 70px; }
         .header__desktop__contact__item__icon {
           display: flex;
           align-items: center;
@@ -368,8 +368,8 @@
             font-size: 25px; } }
       .hero__text__button a:hover {
         background-color: white;
-        color: #203B77;
-        border: 2px solid #203B77; }
+        color: #00489A;
+        border: 2px solid #00489A; }
   .hero__imagen {
     position: relative;
     top: 0;
