@@ -276,130 +276,173 @@
       .layout_whatsapp__button__img img {
         width: 100%; }
 
-.hero {
-  width: 100%;
-  position: relative;
-  height: auto;
-  /*margin-top: 80px;*/
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-  @media (min-width: 1199px) {
-    .hero {
-      height: auto;
-      padding: 124px 0; } }
-  .hero .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column-reverse; }
-    @media (min-width: 1199px) {
-      .hero .container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 30px; } }
-  .hero__text {
+.hero_carrousel {
+  background-image: url("../../img/engrane-grande.webp");
+  background-position: 95% 50%;
+  background-repeat: no-repeat; }
+  .hero_carrousel__hero {
     width: 100%;
+    position: relative;
+    height: auto;
+    /*margin-top: 80px;*/
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column; }
+    justify-content: center; }
     @media (min-width: 1199px) {
-      .hero__text {
-        display: flex;
-        align-items: flex-start;
-        justify-content: center; } }
-    .hero__text h1 {
-      color: black;
-      font-size: 25px;
-      font-weight: bold;
-      text-align: center;
-      font-family: Poppins-Bold;
-      line-height: 32px; }
-      @media (min-width: 768px) {
-        .hero__text h1 {
-          font-size: 45px;
-          line-height: 50px; } }
-      @media (min-width: 1199px) {
-        .hero__text h1 {
-          text-align: start;
-          font-size: 60px; } }
-      @media (min-width: 1700px) {
-        .hero__text h1 {
-          line-height: 72px;
-          font-size: 66px; } }
-    .hero__text p {
-      padding-top: 25px;
-      color: black;
-      font-size: 20px;
-      text-align: center;
-      line-height: 25px; }
-      @media (min-width: 768px) {
-        .hero__text p {
-          font-size: 25px;
-          line-height: 32px; } }
-      @media (min-width: 1199px) {
-        .hero__text p {
-          text-align: start; } }
-    .hero__text__button {
+      .hero_carrousel__hero {
+        height: auto;
+        padding: 124px  0 0 0; } }
+    .hero_carrousel__hero .container {
       display: flex;
       align-items: center;
-      justify-content: center; }
+      justify-content: center;
+      flex-direction: column; }
       @media (min-width: 1199px) {
-        .hero__text__button {
+        .hero_carrousel__hero .container {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 30px; } }
+    .hero_carrousel__hero__text {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column; }
+      @media (min-width: 1199px) {
+        .hero_carrousel__hero__text {
           display: flex;
-          align-items: center;
-          justify-content: flex-start; } }
-      .hero__text__button a {
-        border: 2px solid #DEC83C;
-        margin-top: 30px;
-        background-color: #DEC83C;
-        font-family: Poppins-Bold;
-        padding: 15px 30px;
+          align-items: flex-start;
+          justify-content: center; } }
+      .hero_carrousel__hero__text__imagen {
+        width: 150px; }
+      .hero_carrousel__hero__text h1 {
         color: black;
-        font-size: 15px;
-        border-radius: 10px;
-        text-align: center; }
-        @media (min-width: 300px) {
-          .hero__text__button a {
-            font-size: 20px; } }
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+        font-family: Poppins-Bold;
+        line-height: 32px; }
         @media (min-width: 768px) {
-          .hero__text__button a {
-            font-size: 25px; } }
-      .hero__text__button a:hover {
-        background-color: white;
-        color: #00489A;
-        border: 2px solid #00489A; }
-  .hero__imagen {
-    position: relative;
-    top: 0;
-    left: 0;
-    display: block;
+          .hero_carrousel__hero__text h1 {
+            font-size: 45px;
+            line-height: 50px; } }
+        @media (min-width: 1199px) {
+          .hero_carrousel__hero__text h1 {
+            text-align: start;
+            font-size: 60px; } }
+        @media (min-width: 1700px) {
+          .hero_carrousel__hero__text h1 {
+            line-height: 72px;
+            font-size: 66px; } }
+      .hero_carrousel__hero__text p {
+        padding-top: 25px;
+        color: black;
+        font-size: 20px;
+        text-align: center;
+        line-height: 25px; }
+        @media (min-width: 768px) {
+          .hero_carrousel__hero__text p {
+            font-size: 25px;
+            line-height: 32px; } }
+        @media (min-width: 1199px) {
+          .hero_carrousel__hero__text p {
+            text-align: start; } }
+      .hero_carrousel__hero__text__button {
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        @media (min-width: 1199px) {
+          .hero_carrousel__hero__text__button {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start; } }
+        .hero_carrousel__hero__text__button a {
+          border: 2px solid #DEC83C;
+          margin-top: 30px;
+          background-color: #DEC83C;
+          font-family: Poppins-Bold;
+          padding: 15px 30px;
+          color: black;
+          font-size: 15px;
+          border-radius: 10px;
+          text-align: center; }
+          @media (min-width: 300px) {
+            .hero_carrousel__hero__text__button a {
+              font-size: 20px; } }
+          @media (min-width: 768px) {
+            .hero_carrousel__hero__text__button a {
+              font-size: 25px; } }
+        .hero_carrousel__hero__text__button a:hover {
+          background-color: white;
+          color: #00489A;
+          border: 2px solid #00489A; }
+    .hero_carrousel__hero__imagen {
+      width: 100%; }
+      .hero_carrousel__hero__imagen img {
+        width: 100%; }
+  .hero_carrousel__carrousel {
     width: 100%;
+    position: relative;
+    height: auto;
+    /*margin-top: 80px;*/
     display: flex;
     align-items: center;
-    justify-content: flex-start; }
+    justify-content: center; }
+    @media (min-width: 1199px) {
+      .hero_carrousel__carrousel {
+        height: auto;
+        padding: 60px 0; } }
+    .hero_carrousel__carrousel .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column; }
+      @media (min-width: 1199px) {
+        .hero_carrousel__carrousel .container {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 30px; } }
+    .hero_carrousel__carrousel__imagen {
+      width: 100%; }
+    .hero_carrousel__carrousel__carrousel h1.title {
+      color: #00489A;
+      font-size: 20px;
+      text-align: center;
+      font-family: Poppins-Bold; }
+      @media (min-width: 768px) {
+        .hero_carrousel__carrousel__carrousel h1.title {
+          font-size: 25px; } }
+      @media (min-width: 1199px) {
+        .hero_carrousel__carrousel__carrousel h1.title {
+          font-size: 30px;
+          padding-bottom: 30px; } }
+      @media (min-width: 1700px) {
+        .hero_carrousel__carrousel__carrousel h1.title {
+          font-size: 35px; } }
 
 .services {
   width: 100%;
   position: relative;
   height: auto;
-  padding: 60px 0 30px 0; }
+  padding: 60px 0 30px 0;
+  background-image: url("../../img/banner-rep.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
   @media (min-width: 1199px) {
     .services {
       padding: 60px 0 60px 0; } }
   .services h1.title {
-    color: black;
+    color: #00489A;
     font-size: 20px;
     text-align: center;
-    font-family: Lato-Bold; }
+    font-family: Poppins-Bold; }
     @media (min-width: 768px) {
       .services h1.title {
         font-size: 25px; } }
     @media (min-width: 1199px) {
       .services h1.title {
-        font-size: 30px;
-        padding-bottom: 30px; } }
+        font-size: 30px; } }
     @media (min-width: 1700px) {
       .services h1.title {
         font-size: 35px; } }
@@ -428,20 +471,13 @@
       flex-direction: column;
       gap: 15px;
       padding: 30px;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1); }
+      border: 1px solid #00489A;
+      border-radius: 15px; }
       @media (min-width: 1199px) {
         .services__grid__item {
           display: flex;
           align-items: flex-start;
           justify-content: flex-start; } }
-      .services__grid__item:hover {
-        background-color: #5D70D6; }
-        .services__grid__item:hover .services__grid__item__text h1, .services__grid__item:hover .services__grid__item__text p {
-          color: white; }
-        .services__grid__item:hover .services__grid__item__imagen img {
-          filter: sepia(100%) brightness(200%) saturate(0%) contrast(1000%);
-          -webkit-filter: sepia(100%) brightness(200%) saturate(0%) contrast(1000%);
-          -moz-filter: sepia(100%) brightness(200%) saturate(0%) contrast(1000%); }
       .services__grid__item__imagen {
         height: 91px;
         margin: auto; }
@@ -470,12 +506,6 @@
           @media (min-width: 1199px) {
             .services__grid__item__text h1 {
               font-size: 25px; } }
-        .services__grid__item__text p {
-          color: black;
-          font-size: 15px; }
-          @media (min-width: 1199px) {
-            .services__grid__item__text p {
-              font-size: 18px; } }
   .services__button {
     display: flex;
     align-items: center;
@@ -486,13 +516,13 @@
         align-items: center;
         justify-content: flex-end; } }
     .services__button a {
-      border: 2px solid #00489A;
+      border: 2px solid #DEC83C;
       margin-top: 15px;
-      background-color: #00489A;
-      font-family: OpenSans-Bold;
+      background-color: #DEC83C;
+      font-family: Poppins-Bold;
       font-weight: bold;
       padding: 15px 30px;
-      color: white;
+      color: black;
       border-radius: 28px;
       text-align: center; }
       @media (min-width: 300px) {

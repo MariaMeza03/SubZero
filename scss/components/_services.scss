@@ -3,27 +3,29 @@
 	position: relative;
 	height: auto;
     padding: 60px 0 30px 0;
+    background-image: url('../../img/banner-rep.webp');
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     @media(min-width:1199px){
         padding: 60px 0 60px 0;
     }
 
     h1.title{
-        color: $black;
+        color: $elephant;
         font-size: 20px;
         text-align: center;
-        font-family: Lato-Bold;
-
-        
+        font-family:Poppins-Bold;
+   
         @media(min-width:768px){
             font-size: 25px;
         }
 
         @media(min-width:1199px){
             font-size: 30px;
-            padding-bottom: 30px;
         }
-        
+                
         @media(min-width:1700px){
             font-size: 35px;
         }
@@ -58,30 +60,12 @@
             flex-direction: column;
             gap: 15px;
             padding: 30px ;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.10);
+            border: 1px solid $elephant;
+            border-radius: 15px;
 
             @media(min-width: 1199px){
                 @include flex-start-start;
             }
-    
-            &:hover{
-                background-color: $medium_electric_blue;
-    
-                .services__grid__item__text{
-                    h1,p{
-                        color: $white;
-                    }
-                }
-    
-                .services__grid__item__imagen{
-                    img{
-                        filter: sepia(100%) brightness(200%) saturate(0%) contrast(1000%);
-                        -webkit-filter: sepia(100%) brightness(200%) saturate(0%) contrast(1000%);
-                        -moz-filter: sepia(100%) brightness(200%) saturate(0%) contrast(1000%);
-                    }
-                }
-            }
-    
     
             &__imagen{
                 height: 91px;
@@ -113,15 +97,6 @@
                     }
     
                 }
-    
-                p{
-                    color: $black;
-                    font-size: 15px;
-            
-                    @media(min-width: 1199px){
-                        font-size: 18px;
-                    }
-                }
             }
         }
     }
@@ -134,13 +109,13 @@
         }
 
         a{
-            border: 2px solid $elephant;
+            border: 2px solid $gold_drop;
             margin-top: 15px;
-            background-color:$elephant;
-            font-family: OpenSans-Bold;
+            background-color:$gold_drop;
+            font-family: Poppins-Bold;
             font-weight: bold;
             padding: 15px 30px ;
-            color:white;
+            color:$black;
             border-radius: 28px;
             text-align: center;
 
