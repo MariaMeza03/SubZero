@@ -1,6 +1,6 @@
 const swiper= new Swiper('.swiper', {
     slidesPerView: "auto",
-    spaceBetween: 30,
+    spaceBetween: 15,
     loop:"true",
     
     navigation: {

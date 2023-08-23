@@ -58,28 +58,25 @@
     
             a{
                 border: 2px solid $gold_drop;
-                margin-top: 15px;
                 background-color:$gold_drop;
                 font-family: Poppins-Bold;
+                margin-top: 15px;
                 font-weight: bold;
                 padding: 15px 30px ;
                 color:$black;
                 border-radius: 10px;
                 text-align: center;
-    
-                @media(min-width:300px){
-                    font-size: 20px;         
-                }
-    
+                font-size: 18px;   
+                
                 @media(min-width:768px){
-                    font-size: 25px;
+                    font-size: 22px;
                     
                 }
-    
+
                 @media(min-width:1199px){
                     margin-top: 30px;
+                    
                 }
-    
             }
     
             a:hover{

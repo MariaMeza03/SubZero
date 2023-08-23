@@ -164,13 +164,14 @@
 
         &__carrousel{
             height: auto;
+            
 
             h1.title{
                 color: $elephant;
                 font-size: 20px;
                 text-align: center;
                 font-family: Poppins-Bold;
-
+                padding-bottom: 15px;
                 
                 @media(min-width:768px){
                     font-size: 25px;
