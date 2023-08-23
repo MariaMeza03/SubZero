@@ -34,14 +34,14 @@
             color:$black;
             border-radius: 10px;
             text-align: center;
+            font-size: 15px; 
 
-            @media(min-width:300px){
-                font-size: 20px;         
+            @media(min-width:678px){
+                font-size: 18px;     
             }
-
-            @media(min-width:768px){
-                font-size: 25px;
                 
+            @media(min-width:1199px){
+                font-size: 22px;     
             }
 
         }

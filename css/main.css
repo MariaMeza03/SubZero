@@ -400,11 +400,13 @@
       justify-content: center;
       flex-direction: column;
       gap: 15px; }
+      @media (min-width: 768px) {
+        .hero_carrousel__carrousel .container {
+          gap: 30px; } }
       @media (min-width: 1199px) {
         .hero_carrousel__carrousel .container {
           display: grid;
-          grid-template-columns: repeat(2, 1fr);
-          gap: 30px; } }
+          grid-template-columns: repeat(2, 1fr); } }
     .hero_carrousel__carrousel__imagen {
       width: 80%; }
       @media (min-width: 1199px) {
@@ -640,18 +642,22 @@
         justify-content: flex-end; } }
     .services__button a {
       border: 2px solid #DEC83C;
-      margin-top: 15px;
       background-color: #DEC83C;
       font-family: Poppins-Bold;
+      margin-top: 15px;
       font-weight: bold;
       padding: 15px 30px;
       color: black;
       border-radius: 10px;
       text-align: center;
-      font-size: 18px; }
+      font-size: 15px; }
+      @media (min-width: 678px) {
+        .services__button a {
+          font-size: 18px; } }
       @media (min-width: 1199px) {
         .services__button a {
-          margin-top: 22px; } }
+          font-size: 22px;
+          margin-top: 30px; } }
     .services__button a:hover {
       background-color: white;
       color: #00489A;
@@ -743,12 +749,13 @@
       color: black;
       border-radius: 10px;
       text-align: center;
-      font-size: 18px; }
-      @media (min-width: 768px) {
+      font-size: 15px; }
+      @media (min-width: 678px) {
         .banner_contact__text__button a {
-          font-size: 22px; } }
+          font-size: 18px; } }
       @media (min-width: 1199px) {
         .banner_contact__text__button a {
+          font-size: 22px;
           margin-top: 30px; } }
     .banner_contact__text__button a:hover {
       background-color: white;
@@ -809,21 +816,22 @@
         justify-content: flex-end; } }
     .banner_services__button a {
       border: 2px solid #DEC83C;
-      margin-top: 15px;
       background-color: #DEC83C;
       font-family: Poppins-Bold;
+      margin-top: 15px;
       font-weight: bold;
       padding: 15px 30px;
       color: black;
       border-radius: 10px;
       text-align: center;
-      font-size: 18px; }
-      @media (min-width: 768px) {
+      font-size: 15px; }
+      @media (min-width: 678px) {
         .banner_services__button a {
-          font-size: 22px; } }
+          font-size: 18px; } }
       @media (min-width: 1199px) {
         .banner_services__button a {
-          margin-top: 22px; } }
+          font-size: 22px;
+          margin-top: 30px; } }
     .banner_services__button a:hover {
       background-color: white;
       color: #00489A;
@@ -1077,17 +1085,21 @@
           .form__question__inputs__input__button button {
             width: 100%;
             border: 2px solid #DEC83C;
-            margin-top: 10px;
             background-color: #DEC83C;
             font-family: Poppins-Bold;
-            padding: 15px;
+            margin-top: 7.5px;
+            font-weight: bold;
+            padding: 15px 30px;
             color: black;
-            font-size: 15px;
+            border-radius: 10px;
             text-align: center;
-            border-radius: 10px; }
-            @media (min-width: 1199px) {
+            font-size: 15px; }
+            @media (min-width: 678px) {
               .form__question__inputs__input__button button {
                 font-size: 18px; } }
+            @media (min-width: 1199px) {
+              .form__question__inputs__input__button button {
+                font-size: 22px; } }
           .form__question__inputs__input__button button:hover {
             background-color: white;
             color: #00489A;
@@ -1127,13 +1139,14 @@
       padding: 15px 30px;
       color: black;
       border-radius: 10px;
-      text-align: center; }
-      @media (min-width: 300px) {
+      text-align: center;
+      font-size: 15px; }
+      @media (min-width: 678px) {
         .contact__button a {
-          font-size: 20px; } }
-      @media (min-width: 768px) {
+          font-size: 18px; } }
+      @media (min-width: 1199px) {
         .contact__button a {
-          font-size: 25px; } }
+          font-size: 22px; } }
     .contact__button a:hover {
       background-color: white;
       color: #00489A;
