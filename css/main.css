@@ -66,7 +66,7 @@
     top: 0;
     background: linear-gradient(90deg, #00489A); }
   .header--hide {
-    background: transparent; }
+    background: rgba(255, 255, 255, 0.8); }
   @media (min-width: 1199px) {
     .header {
       height: auto; } }
