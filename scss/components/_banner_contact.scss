@@ -2,7 +2,7 @@
     width: 100%;
 	position: relative;
 	height: auto;
-    padding: 60px 0 30px 0;
+    padding: 30px 0 30px 0;
     background-image: url('../../img/banner-2.webp');
     background-position: center;
     background-size: cover;
@@ -62,7 +62,7 @@
                 font-family: Poppins-Bold;
                 margin-top: 15px;
                 font-weight: bold;
-                padding: 15px 30px ;
+                padding: 15px ;
                 color:$black;
                 border-radius: 10px;
                 text-align: center;
@@ -70,6 +70,7 @@
     
                 @media(min-width:678px){
                     font-size: 18px;     
+                    padding: 15px 30px ;
                 }
                     
                 @media(min-width:1199px){

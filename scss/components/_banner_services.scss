@@ -65,14 +65,15 @@
             font-family: Poppins-Bold;
             margin-top: 15px;
             font-weight: bold;
-            padding: 15px 30px ;
+            padding: 15px ;
             color:$black;
             border-radius: 10px;
             text-align: center;
             font-size: 15px; 
 
             @media(min-width:678px){
-                font-size: 18px;     
+                font-size: 18px;  
+                padding: 15px 30px ;   
             }
                 
             @media(min-width:1199px){

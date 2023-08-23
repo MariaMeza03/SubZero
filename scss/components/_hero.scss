@@ -132,12 +132,15 @@
         width: 100%;
         position: relative;
         height: auto;
+        padding-top:30px;
+        margin-top: 30px;
         /*margin-top: 80px;*/
        @include flex-center-center;
     
         @media(min-width:1199px){
             height: auto;
-            padding:60px 0 0 0;
+            padding-top:60px;
+            margin-top: 60px;
         }
     
 
@@ -201,10 +204,11 @@
                     border-radius: 10px;
                     margin: auto;
                     @include flex-center-center;
-                    margin-top: 30px;
+                    margin-top: 15px;
                     padding: 15px 0;
                     
                     @media(min-width:678px){
+                        margin-top: 30px;
                         display: grid;
                         grid-template-columns: repeat(2, 1fr);
                     }

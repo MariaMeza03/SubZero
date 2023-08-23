@@ -2,13 +2,15 @@
     width: 100%;
 	position: relative;
 	height: auto;
-    padding: 30px 0 30px 0;
+    padding:30px 0 30px 0;
+    margin: 0px 0px 30px 0;
     background-image: url('../../img/martillo.webp');
     background-position: -20% 0%;
     background-repeat: no-repeat;
 
     @media(min-width:1199px){
-        padding: 0px 0 60px 0;
+        padding: 60px 0 60px 0;
+        margin: 0px 0px 60px 0;
     }
 
     .container{
@@ -91,7 +93,7 @@
             @include flex-center-start;
             flex-direction: column;
             border-radius: 10px;
-            padding: 15px;
+            padding: 10px;
 
             @media(min-width: 1199px){
                 padding: 0;
@@ -101,10 +103,14 @@
             }
 
             &__imagen{
-                height: 200px;
+                height: 120px;
                 width: auto;
                 position: relative;
                 top: 20px;
+
+                @media(min-width: 1199px){
+                    height: 200px;
+                }
             }
 
             &__text{
@@ -113,8 +119,12 @@
                 height: 200px;
                 background-color: $white;
                 margin-top: auto;
-                padding: 30px 15px 15px 15px;
+                padding: 20px 10px 10px 10px;
                 box-shadow:  0px 4px 17px rgba(0, 0, 0, 0.5), rgb(255, 255, 255) 10px 10px 0px -3px, rgb(0, 72, 154) 10px 10px;
+
+                @media(min-width: 1199px){
+                    padding: 30px 15px 15px 15px;
+                }
 
                 h1{
                     width: 100%;
