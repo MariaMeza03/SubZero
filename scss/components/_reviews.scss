@@ -88,13 +88,16 @@
         }
 
         &__item{
-            height: 100%;
             @include flex-center-start;
             flex-direction: column;
             border-radius: 10px;
+            padding: 15px;
 
             @media(min-width: 1199px){
+                padding: 0;
+                width: 100%;
                 @include flex-center-end;
+                height: 100%;
             }
 
             &__imagen{
@@ -156,7 +159,7 @@
 
 }
 
-.swiper_services{
+.swiper_carrousel{
 	width: 100%;
     margin: auto;
     overflow: hidden;
