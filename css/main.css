@@ -278,7 +278,7 @@
         width: 100%; }
 
 .hero_carrousel {
-  background-image: url("../../img/engrane-grande.webp");
+  background-image: url("../img/engrane-grande.webp");
   background-position: 95% 50%;
   background-repeat: no-repeat; }
   .hero_carrousel__hero {
@@ -520,7 +520,7 @@
   height: auto;
   padding: 30px 0 30px 0;
   margin: 30px 0 30px 0;
-  background-image: url("../../img/banner-rep.webp");
+  background-image: url("../img/banner-rep.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -700,7 +700,7 @@
   position: relative;
   height: auto;
   padding: 30px 0 30px 0;
-  background-image: url("../../img/banner-2.webp");
+  background-image: url("../img/banner-2.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -775,7 +775,7 @@
   position: relative;
   height: auto;
   padding: 30px 0 30px 0;
-  background-image: url("../../img/banner-3.webp");
+  background-image: url("../img/banner-3.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -852,7 +852,7 @@
   height: auto;
   padding: 30px 0 30px 0;
   margin: 0px 0px 30px 0;
-  background-image: url("../../img/martillo.webp");
+  background-image: url("../img/martillo.webp");
   background-position: -20% 0%;
   background-repeat: no-repeat; }
   @media (min-width: 1199px) {
@@ -998,7 +998,7 @@
   width: 100%;
   height: auto;
   padding: 30px 0;
-  background-image: url("../../img/fondo-contact.webp");
+  background-image: url("../img/fondo-contact.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -1128,7 +1128,7 @@
   height: auto;
   padding: 30px 0 30px 0;
   margin: 30px 0;
-  background-image: url("../../img/des.webp");
+  background-image: url("../img/des.webp");
   background-position: center;
   background-repeat: no-repeat; }
   @media (min-width: 1199px) {
@@ -1176,7 +1176,7 @@
   position: relative;
   height: auto;
   padding: 30px 0 30px 0;
-  background-image: url("../../img/engrane-pequeño.webp");
+  background-image: url("../img/engrane-pequeño.webp");
   background-position: 0% 0%;
   background-repeat: no-repeat; }
   @media (min-width: 1199px) {
