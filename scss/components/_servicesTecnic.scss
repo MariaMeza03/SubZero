@@ -57,12 +57,14 @@
 
     &__button{
         @include flex-center-center;
+        margin-top: 15px;
 
         @media(min-width:1199px){
             @include flex-start-start;
+            margin-top: 30px;
         }
 
-        button{
+        a{
             background-color:$Tulip_tree ;
             font-family: Segoe UI bold;
             padding: 15px ;
@@ -84,7 +86,7 @@
             }
         }
 
-         button:hover{
+        a:hover{
             background-color:$Medium_electric_blue ;
             color: $white;
         }

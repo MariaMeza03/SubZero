@@ -208,7 +208,7 @@
           display: flex;
           align-items: flex-start;
           justify-content: flex-start; } }
-      .hero__text__button button {
+      .hero__text__button a {
         margin-top: 30px;
         background-color: #E6B743;
         font-family: Segoe UI bold;
@@ -217,34 +217,17 @@
         font-size: 15px;
         border-radius: 10px; }
         @media (min-width: 768px) {
-          .hero__text__button button {
+          .hero__text__button a {
             font-size: 25px; } }
         @media (min-width: 1199px) {
-          .hero__text__button button {
+          .hero__text__button a {
             padding: 23px 35px; } }
         @media (min-width: 1700px) {
-          .hero__text__button button {
+          .hero__text__button a {
             font-size: 30px; } }
-      .hero__text__button button:hover {
+      .hero__text__button a:hover {
         background-color: #035096;
         color: #FFFFFF; }
-    .hero__text button {
-      margin-top: 30px;
-      background-color: #E6B743;
-      font-family: Segoe UI bold;
-      padding: 15px;
-      color: black;
-      font-size: 15px;
-      border-radius: 10px; }
-      @media (min-width: 768px) {
-        .hero__text button {
-          font-size: 25px; } }
-      @media (min-width: 1199px) {
-        .hero__text button {
-          padding: 23px 35px; } }
-      @media (min-width: 1700px) {
-        .hero__text button {
-          font-size: 30px; } }
 
 .center {
   width: 100%;
@@ -391,7 +374,7 @@
       display: flex;
       align-items: center;
       justify-content: center; }
-      .reparation__grid__button button {
+      .reparation__grid__button a {
         background-color: #E6B743;
         font-family: Segoe UI bold;
         padding: 15px;
@@ -399,15 +382,15 @@
         font-size: 15px;
         border-radius: 10px; }
         @media (min-width: 768px) {
-          .reparation__grid__button button {
+          .reparation__grid__button a {
             font-size: 25px; } }
         @media (min-width: 1199px) {
-          .reparation__grid__button button {
+          .reparation__grid__button a {
             padding: 23px 35px; } }
         @media (min-width: 1700px) {
-          .reparation__grid__button button {
+          .reparation__grid__button a {
             font-size: 30px; } }
-      .reparation__grid__button button:hover {
+      .reparation__grid__button a:hover {
         background-color: #035096;
         color: #FFFFFF; }
   .reparation__title h1 {
@@ -536,7 +519,7 @@
         display: flex;
         align-items: flex-start;
         justify-content: flex-start; } }
-    .contact__button button {
+    .contact__button a {
       margin-top: 30px;
       background-color: #E6B743;
       font-family: Segoe UI bold;
@@ -545,15 +528,15 @@
       font-size: 15px;
       border-radius: 10px; }
       @media (min-width: 768px) {
-        .contact__button button {
+        .contact__button a {
           font-size: 25px; } }
       @media (min-width: 1199px) {
-        .contact__button button {
+        .contact__button a {
           padding: 23px 35px; } }
       @media (min-width: 1700px) {
-        .contact__button button {
+        .contact__button a {
           font-size: 30px; } }
-    .contact__button button:hover {
+    .contact__button a:hover {
       background-color: #035096;
       color: #FFFFFF; }
 
@@ -604,13 +587,15 @@
   .servicesTecnic__button {
     display: flex;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    margin-top: 15px; }
     @media (min-width: 1199px) {
       .servicesTecnic__button {
         display: flex;
         align-items: flex-start;
-        justify-content: flex-start; } }
-    .servicesTecnic__button button {
+        justify-content: flex-start;
+        margin-top: 30px; } }
+    .servicesTecnic__button a {
       background-color: #E6B743;
       font-family: Segoe UI bold;
       padding: 15px;
@@ -618,15 +603,15 @@
       font-size: 15px;
       border-radius: 10px; }
       @media (min-width: 768px) {
-        .servicesTecnic__button button {
+        .servicesTecnic__button a {
           font-size: 25px; } }
       @media (min-width: 1199px) {
-        .servicesTecnic__button button {
+        .servicesTecnic__button a {
           padding: 23px 35px; } }
       @media (min-width: 1700px) {
-        .servicesTecnic__button button {
+        .servicesTecnic__button a {
           font-size: 30px; } }
-    .servicesTecnic__button button:hover {
+    .servicesTecnic__button a:hover {
       background-color: #035096;
       color: #FFFFFF; }
 

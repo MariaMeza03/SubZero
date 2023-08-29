@@ -55,7 +55,7 @@
         &__button{
             @include flex-center-center;
 
-            button{
+            a{
                 background-color:$Tulip_tree ;
                 font-family: Segoe UI bold;
                 padding: 15px ;
@@ -77,7 +77,7 @@
                 }
             }
 
-            button:hover{
+            a:hover{
                 background-color:$Medium_electric_blue ;
                 color: $white;
             }

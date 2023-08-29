@@ -89,7 +89,7 @@
                 @include flex-start-start;
             }
 
-            button{
+            a{
                 margin-top: 30px;
                 background-color:$Tulip_tree ;
                 font-family: Segoe UI bold;
@@ -112,34 +112,12 @@
                 }
             }
 
-            button:hover{
+            a:hover{
                 background-color:$Medium_electric_blue ;
                 color: $white;
             }
         }
 
-        button{
-            margin-top: 30px;
-            background-color:$Tulip_tree ;
-            font-family: Segoe UI bold;
-            padding: 15px ;
-            color:black;
-            font-size: 15px;
-            border-radius: 10px;
-
-            @media(min-width:768px){
-                font-size: 25px;
-                
-            }
-
-            @media(min-width:1199px){
-                padding: 23px 35px;
-            }
-            
-            @media(min-width:1700px){
-                font-size: 30px;
-            }
-        }
     }
 
 
