@@ -1,50 +1,48 @@
 //* Globals
 @import 'globals/colors';
-@import 'globals/container.scss';
+@import 'globals/containers';
 
 
 //* Mixins
 @import 'mixins/flex';
 
 //* Layouts
-@import 'layout/header';
-@import 'layout/menu';
 @import 'layout/footer';
 @import 'layout/whatsapp';
 
-//*components
+//*home
 @import 'components/hero';
+@import 'components/center';
+@import 'components/reparation';
 @import 'components/services';
-@import 'components/banner_contact';
-@import 'components/banner_services';
+@import 'components/contact';
+@import 'components/servicesTecnic';
 @import 'components/reviews';
 @import 'components/form';
-@import 'components/contact';
-@import 'components/offer';
+@import 'components/button';
 
-
-
-//*thanks
+//*Thanks
 @import 'components/thanks';
 
 @font-face {
-	font-family:  Poppins-Regular;
-	src: url('../fonts/Poppins-Regular.ttf') format('truetype');
+	font-family: Segoe UI bold;
+	src: url('../font/Segoe\ UI\ Bold.woff') format('truetype');
 
   }
 
   @font-face {
-	font-family:  Poppins-Bold;
-	src: url('../fonts/Poppins-Bold.ttf') format('truetype');
+	font-family: Segoe UI Regular;
+	src: url('../font/Segoe\ UI.woff') format('truetype');
 
   }
 
-  
 *{
-	font-family: Poppins-Regular;
 	margin: 0;
 	padding: 0;
+	font-family: 'Roboto', sans-serif;
 	box-sizing: border-box;
+	
+
 }
 
 button{
@@ -64,5 +62,7 @@ svg{
 	height: 100%;
 }
 
-
+body{
+	font-size: 45px;
+}
 

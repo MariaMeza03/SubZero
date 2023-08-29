@@ -1,16 +1,11 @@
-.review{
+.reviews{
     width: 100%;
+	overflow: hidden;
 	position: relative;
-	height: auto;
-    padding:30px 0 30px 0;
-    margin: 0px 0px 30px 0;
-    background-image: url('../img/martillo.webp');
-    background-position: -20% 0%;
-    background-repeat: no-repeat;
+    padding:  0 0 20px 0;
 
     @media(min-width:1199px){
-        padding: 60px 0 60px 0;
-        margin: 0px 0px 60px 0;
+        padding: 60px 0;
     }
 
     .container{
@@ -21,11 +16,12 @@
     &--prev{
 		position: absolute;
         left: 15px;
-		top: 50%;
+		top: 60%;
 		width: 30px;
 		height: 30px;
 		border-radius: 50%;
 		z-index: 2;
+
 
 		svg{
 			width: 30px;
@@ -37,7 +33,7 @@
 	&--next{
 		position: absolute;
         right: 15px;
-		top: 50%;
+		top: 60%;
 		width: 30px;
 		height: 30px;
 		border-radius: 50%;
@@ -53,144 +49,179 @@
 
     &__title{
         h1{
-            color: $elephant;
-            font-size: 20px;
+            font-family: Segoe UI bold;
             text-align: center;
-            font-family:Poppins-Bold;
-       
-            @media(min-width:768px){
-                font-size: 25px;
-            }
-    
-            @media(min-width:1199px){
+            font-size: 25px;
+            color: $Medium_electric_blue;
+
+            @media(min-width: 1199px){
                 font-size: 30px;
-            }
-                    
-            @media(min-width:1700px){
-                font-size: 35px;
             }
         }
 
     }
 
     &__grid{
-        width: 100%;
-        padding: 30px 0;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 15px;
+        padding-top: 60px;
+        gap:10px;
         display: none;
 
-        @media(min-width: 992px){
-            display: grid;
-            padding: 30px 0 0 0;
+        @media(min-width:992px){
+            display: flex;
         }
 
         @media(min-width: 1199px){
-            gap: 60px;
+            gap: 50px;
         }
 
-        &__item{
-            @include flex-center-start;
-            flex-direction: column;
-            border-radius: 10px;
-            padding: 10px;
 
-            @media(min-width: 1199px){
-                padding: 0;
-                width: 100%;
-                @include flex-center-end;
-                height: 100%;
-            }
+        &__item{
+            @include flex-center-center;
+            flex-direction: column;
+            width: 100%;
+            box-shadow: 1px 3px 14px 0px #b7b3b3;
+            border-radius: 25px;
+            padding: 30px;
 
             &__imagen{
-                height: 120px;
-                width: auto;
-                position: relative;
-                top: 20px;
-
-                @media(min-width: 1199px){
-                    height: 200px;
-                }
+                width: 200px;
             }
 
-            &__text{
-                border-radius: 10px;
-                width: 100%;
-                height: 200px;
-                background-color: $white;
-                margin-top: auto;
-                padding: 20px 10px 10px 10px;
-                box-shadow:  0px 4px 17px rgba(0, 0, 0, 0.5), rgb(255, 255, 255) 10px 10px 0px -3px, rgb(0, 72, 154) 10px 10px;
+            &__start{
+               width: 280px;
+               margin: 20px auto;
 
-                @media(min-width: 1199px){
-                    padding: 30px 15px 15px 15px;
-                }
+               @media(min-width: 1199px){
+                width: 240px;
+               }
 
-                h1{
-                    width: 100%;
-                    color: $black;
-                    font-family: Poppins-Bold;
-                    font-size: 18px;
-                    text-align: center;
-            
-                    @media(min-width: 1199px){
-                        font-size: 22px;
-                    }
-                }
+            }
+
+            &__box{
+                height: 150px;
+                @include flex-center-center;
+                flex-direction: column;
+                gap: 10px;
+                background-color: #E6B743;
+                padding: 25px;
+                border-bottom-left-radius: 25px 25px;
+                border-bottom-right-radius: 25px 25px;
 
                 p{
-                    width: 100%;
-                    color: $black;
-                    font-family: Poppins-Regular;
+                    margin: auto;
+                    font-family: Segoe UI Regular;
                     font-size: 15px;
                     text-align: center;
-                    padding-top: 15px;
-            
+                    color:$black;
+        
                     @media(min-width: 1199px){
                         font-size: 18px;
                     }
                 }
 
                 span{
-                    font-family:  Poppins-Bold;
+                    font-weight: bold;
                 }
+        
             }
         }
     }
 
     &__carrousel{
-        width: 80%;
-        padding-top: 5px ;
-        @media(min-width: 992px){
+        padding-top: 20px;
+        display: flex;
+        width:100%;
+
+        @media(min-width:992px){
             display: none;
         }
 
-    }
+        &__item{
+            @include flex-center-center;
+            flex-direction: column;
+            width: 90%;
+            box-shadow: 1px 3px 14px 0px #b7b3b3;
+            border-radius: 25px;
+            padding: 20px;
 
+            &__imagen{
+                width: 200px;
+            }
+
+            &__start{
+               width: 180px;
+               margin: 20px auto;
+
+               @media(min-width: 768px){
+                width: 200px;
+               }
+
+               @media(min-width: 1199px){
+                width: 240px;
+               }
+
+               img{
+                width: 100%;
+               }
+
+            }
+
+            &__box{
+                height: 140px;
+                @include flex-center-center;
+                flex-direction: column;
+                gap: 10px;
+                padding: 15px;
+                background-color: #E6B743;
+                border-bottom-left-radius: 25px 25px;
+                border-bottom-right-radius: 25px 25px;
+
+                @media(min-width: 1199px){
+                    height: 150px;
+                }
+
+                p{
+                    margin: auto;
+                    font-family: Segoe UI Regular;
+                    font-size: 15px;
+                    text-align: center;
+                    color:$black;
+        
+                    @media(min-width: 1199px){
+                        font-size: 18px;
+                    }
+                }
+
+                span{
+                    font-weight: bold;
+                }
+        
+            }
+        }
+    }
 }
 
-.swiper_carrousel{
+.swiper_reviews{
 	width: 100%;
-    margin: auto;
+	height: 100%;
     overflow: hidden;
-    height: 100%;
 
 		.swiper-slide{
-            width: 100% !important;
-            height: 100%;
-            /* Center slide text vertically */
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: -webkit-flex;
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            -webkit-justify-content: center;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            -webkit-align-items: center; 
+			width: 100% !important;
+			height: 100%;
+            @include flex-center-center;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			-webkit-justify-content: center;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			-webkit-align-items: center;
+            padding: 10px;
+
 
 		}
-
-        
 
 }

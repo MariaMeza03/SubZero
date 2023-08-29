@@ -1,7 +1,7 @@
 <?php   		
                 var_dump($_POST);
 				//Destinatario
-				$mail_destinatario = 'contactohr43@gmail.com';
+				$mail_destinatario = 'info@servicioastec.com';
 				$subject = 'Solicitud Formulario GE';
 				$headers .= "From: ".$_POST['email']. "\r\n";
         $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
@@ -24,13 +24,9 @@
                                                 <td style="width:53%">Telefono:</td>'
                                                 .'<td class="tg-yw4l" style="color:blue;">'.$_POST['telefono'].'</td>'.
                                               '</tr>'.
-                                              '<tr>
-                                                <td style="width:53%">Servicio:</td>'
-                                                .'<td class="tg-yw4l" style="color:blue;">'.$_POST['servicio'].'</td>'.
-                                              '</tr>'.
-                                              '<tr>
-                                                <td style="width:53%">Comentarios:</td>'
-                                                .'<td class="tg-yw4l" style="color:blue;">'.$_POST['comentarios'].'</td>'.
+                                            '<tr>
+                                                <td style="width:53%">Mensaje:</td>'
+                                                .'<td class="tg-yw4l" style="color:blue;">'.$_POST['mensaje'].'</td>'.
                                               '</tr>'.
                                               
                                             '</body>'.
