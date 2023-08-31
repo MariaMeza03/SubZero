@@ -130,6 +130,160 @@
       .layout_whatsapp__button__img img {
         width: 100%; }
 
+.header {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: #000000; }
+  @media (min-width: 1199px) {
+    .header {
+      padding: 0 30px;
+      height: auto;
+      background: #000000; } }
+  .header--show {
+    padding: 15px;
+    top: 0;
+    background: linear-gradient(90deg, #000000); }
+  .header--hide {
+    background: rgba(0, 0, 0, 0.7); }
+  @media (min-width: 1199px) {
+    .header {
+      height: auto; } }
+  .header__mobile {
+    width: 100%;
+    height: 100%;
+    display: block; }
+    @media (min-width: 1200px) {
+      .header__mobile {
+        display: none; } }
+    .header__mobile .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 100%; }
+    .header__mobile__logo {
+      width: 150px; }
+    .header__mobile__toggle {
+      width: 43px;
+      height: 43px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      background-color: #035096;
+      border: 1px solid transparent;
+      border-radius: 4px;
+      padding: 13px 10px; }
+      .header__mobile__toggle__bar {
+        width: 100%;
+        height: 2px;
+        background-color: white;
+        position: relative;
+        transition: 0.3s; }
+        .header__mobile__toggle__bar::before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: -8px;
+          left: 0;
+          background-color: white;
+          transition: 0.3s; }
+        .header__mobile__toggle__bar::after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          bottom: -8px;
+          left: 0;
+          background-color: white;
+          transition: 0.3s; }
+  .header__desktop {
+    width: 100%;
+    height: auto;
+    display: none; }
+    @media (min-width: 1200px) {
+      .header__desktop {
+        display: block; } }
+    .header__desktop .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 100%;
+      padding: 15px 0; }
+    .header__desktop__logo {
+      width: 200px; }
+    .header__desktop__contact {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px; }
+      .header__desktop__contact__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px; }
+        .header__desktop__contact__item__icon {
+          width: 20px; }
+          @media (min-width: 1700px) {
+            .header__desktop__contact__item__icon {
+              width: 32px; } }
+          .header__desktop__contact__item__icon svg {
+            width: 100%; }
+        .header__desktop__contact__item a.phone {
+          font-size: 16px;
+          color: #FFFFFF;
+          font-weight: 400;
+          padding: 10px 0px;
+          transition: 0.3s; }
+          @media (min-width: 1700px) {
+            .header__desktop__contact__item a.phone {
+              font-size: 16px; } }
+
+.menu {
+  width: 70%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: -200%;
+  background: #000000;
+  z-index: 100;
+  padding: 30px 5px;
+  transition: 0.3s; }
+  .menu--active {
+    left: 0%; }
+  .menu__links {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; }
+    .menu__links__contact {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column; }
+      .menu__links__contact__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 0;
+        gap: 10px; }
+        @media (min-width: 1199px) {
+          .menu__links__contact__item {
+            flex-direction: row; } }
+        .menu__links__contact__item__icon {
+          width: 20px; }
+        .menu__links__contact__item a.phone {
+          font-size: 13px;
+          color: #FFFFFF;
+          font-weight: 400;
+          transition: 0.3s; }
+          @media (min-width: 1199px) {
+            .menu__links__contact__item a.phone {
+              font-size: 16px; } }
+
 .hero {
   width: 100%;
   overflow: hidden;
@@ -139,7 +293,8 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 60px 0; }
+  padding: 60px 0;
+  margin-top: 80px; }
   @media (min-width: 1199px) {
     .hero {
       height: 900px; } }

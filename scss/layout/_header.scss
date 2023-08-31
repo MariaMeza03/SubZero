@@ -1,0 +1,153 @@
+.header {
+	width: 100%;
+	height: 80px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+    background: $black;
+   
+      @media(min-width:1199px){
+        padding: 0 30px;
+		height: auto;
+		background: $black;
+    }
+
+
+	&--show{
+		padding: 15px;
+		top: 0;
+		background: linear-gradient(90deg,  $black); //#92d2
+	}
+
+	&--hide{
+		background: rgba(0,0,0,0.7);
+	}
+
+	@media(min-width:1199px){
+		height: auto;
+	}
+
+	&__mobile {
+		width: 100%;
+		height: 100%;
+		display: block;
+
+		@media(min-width: 1200px) {
+			display: none;
+		}
+
+		.container {
+			@include flex-center-between;
+			height: 100%;
+		}
+
+		&__logo {
+			width: 150px;
+		}
+
+		&__toggle {
+			width: 43px;
+			height: 43px;
+			@include flex-center-center;
+			cursor: pointer;
+			background-color:$Medium_electric_blue;
+			border: 1px solid transparent;
+    		border-radius: 4px;
+			padding: 13px 10px;
+
+			&__bar {
+				width: 100%;
+				height: 2px;
+				background-color: white;
+				position: relative;
+				transition: 0.3s;
+
+				&::before {
+					content: "";
+					position: absolute;
+					width: 100%;
+					height: 100%;
+					top: -8px;
+					left: 0;
+					background-color: white;
+					transition: 0.3s;
+				}
+
+				&::after {
+					content: "";
+					position: absolute;
+					width: 100%;
+					height: 100%;
+					bottom: -8px;
+					left: 0;
+					background-color: white;
+					transition: 0.3s;
+				}
+
+			}
+
+		}
+		
+
+
+	}
+
+	&__desktop {
+		width: 100%;
+		height: auto;
+		display: none;
+
+
+		@media(min-width: 1200px) {
+			display: block;
+		}
+
+		.container {
+			@include flex-center-between;
+			height: 100%;
+			padding: 15px 0;
+		}
+
+		&__logo {
+			width: 200px;
+		}
+
+        &__contact{
+            @include flex-center-center;
+            gap: 30px;
+
+            &__item{
+                @include flex-center-center;
+                gap: 10px;
+
+                &__icon{
+                    width: 20px;
+
+                    @media(min-width:1700px){
+                        width: 32px;
+                    }
+
+                    svg{
+                        width: 100%;
+                    }
+                }
+
+                a.phone{
+                    font-size: 16px;
+                    color: $white;
+                    font-weight: 400;
+                    padding: 10px 0px ;
+                    transition: 0.3s;
+
+                    @media(min-width:1700px){
+                        font-size: 16px;
+                    }
+        
+                }  
+            }
+        }
+
+	}
+
+}
