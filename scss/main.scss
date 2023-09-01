@@ -29,12 +29,13 @@
 @font-face {
 	font-family: Segoe UI bold;
 	src: url('../font/Segoe\ UI\ Bold.woff') format('truetype');
-
+	font-display: swap;
   }
 
   @font-face {
 	font-family: Segoe UI Regular;
 	src: url('../font/Segoe\ UI.woff') format('truetype');
+	font-display: swap;
 
   }
 

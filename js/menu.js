@@ -44,5 +44,3 @@ window.onscroll = function(){
 
 main.addEventListener('click', DeleteMenu)
 toggle.addEventListener('click', toggleMenu)
-submenuButton.addEventListener('click', SubmenuDesktop)
-submenuButtonMovil.addEventListener('click',SubmenuMovil )
